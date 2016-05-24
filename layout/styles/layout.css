@@ -105,7 +105,7 @@ File: Layout CSS
 
 /* Copyright
 --------------------------------------------------------------------------------------------------------------- */
-#copyright{padding:20px 0;}
+#copyright{padding:2px 0;}
 #copyright *{margin:0; padding:0;}
 
 
@@ -237,11 +237,15 @@ label span{color:#FF0000; background-color:inherit;}
 
 #pageintro .maintitle {
 		color: #811B33;
+		text-shadow: 0px 0px 10px #BA7E7E;
 		font-family: "Clicker Script",cursive;
 		font-weight: bold;
 		font-size: 85px;
 	}
-#pageintro .xl { color: #811B33; }
+#pageintro .xl {
+	color: #811B33;
+	text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.5);
+}
 
 
 /* Rows */
@@ -266,7 +270,9 @@ label span{color:#FF0000; background-color:inherit;}
 #pageintro .services .heading{color:#FFFFFF;}
 #pageintro .services p{color:#888888;}
 #pageintro .services a i{color:#CCCCCC; border-color:#333333;}
-#pageintro .services li:hover a i{color:#FFFFFF; background-color:#F7CAC9; border-color:#F7CAC9;}
+#pageintro .services li:hover a i{
+	color:#811B33; background-color:#F7CAC9; border-color:#F7CAC9;
+}
 #pageintro .services li:hover .overlay{background-color:rgba(0,0,0,1);}
 
 
