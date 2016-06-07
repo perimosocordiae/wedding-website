@@ -53,7 +53,7 @@ File: Layout CSS
 
 /* Content Area
 --------------------------------------------------------------------------------------------------------------- */
-.container{padding:80px 0;}
+.container{padding:3em 0 1em 0;}
 
 /* Content */
 .container .content{}
@@ -89,7 +89,7 @@ File: Layout CSS
 
 /* Footer
 --------------------------------------------------------------------------------------------------------------- */
-#footer{padding:50px 0;}
+#footer{padding:1em 0;}
 
 #footer .title{margin:0 0 20px 0; padding:0 0 8px 0; border-bottom:1px solid; font-size:16px; text-transform:uppercase;}
 
@@ -197,7 +197,7 @@ td{border-width:0 1px;}
 
 /* Gallery
 --------------------------------------------------------------------------------------------------------------- */
-#gallery{display:block; width:100%; margin-bottom:50px;}
+#gallery{display:block; width:100%; }
 #gallery figure figcaption{display:block; width:100%; clear:both;}
 #gallery li{margin-bottom:30px;}
 
@@ -211,15 +211,6 @@ td{border-width:0 1px;}
 .faico a{display:inline-block; width:30px; height:30px; line-height:30px; font-size:16px; text-align:center;}
 .faico a{color:#FFFFFF; background-color:#F3F3F3;}
 
-.faicon-dribble:hover{background-color:#EA4C89;}
-.faicon-facebook:hover{background-color:#3B5998;}
-.faicon-google-plus:hover{background-color:#DB4A39;}
-.faicon-linkedin:hover{background-color:#0E76A8;}
-.faicon-pinterest:hover{background-color:#C8232C;}
-.faicon-rss:hover{background-color:#EE802F;}
-.faicon-twitter:hover{background-color:#00ACEE;}
-
-
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------------ */
@@ -229,9 +220,9 @@ td{border-width:0 1px;}
 
 /* Colours
 --------------------------------------------------------------------------------------------------------------- */
-body{color:#888888; background-color:#2E2E2E;}
+body{color:#666666; background-color:#2E2E2E;}
 a{color:#F7CAC9;}
-hr, .borderedbox{border-color:#D7D7D7;}
+hr, .borderedbox{border-color:#707070;}
 label span{color:#FF0000; background-color:inherit;}
 .overlay{color:inherit; background-color:rgba(0,0,0,.65);}
 
@@ -247,11 +238,11 @@ label span{color:#FF0000; background-color:inherit;}
 
 
 /* Rows */
-.row0, .row0 a{color:#888888; background-color:#FFFFFF;}
+.row0, .row0 a{color:#666666; background-color:#FFFFFF;}
 .row0{border-color:#D7D7D7;}
-.row1, .row1 a{color:#888888; background-color:#FFFFFF;}
+.row1, .row1 a{color:#666666; background-color:#FFFFFF;}
 .row2{color:#FFFFFF; background-color:#161616;}
-.row3{color:#888888; background-color:#FFFFFF;}
+.row3{color:#555555; background-color:#FFFFFF;}
 .row3 a{color:#811B33;}
 .row4{color:#FFFFFF; background-color:#811B33;}
 .row4 a{color:#F7CAC9;}
@@ -296,7 +287,7 @@ label span{color:#FF0000; background-color:inherit;}
 #mainav li li:hover > a, #mainav .active .active > a{color:#FFFFFF; background-color:#F7CAC9;}
 #mainav form select{border-color:#D7D7D7;}
 
-#breadcrumb li, #breadcrumb a{color:#888888; background-color:inherit;}
+#breadcrumb li, #breadcrumb a{color:#bbbbbb; background-color:inherit;}
 #breadcrumb li:last-child a{color:#FFFFFF;}
 
 .container .sidebar nav a{color:inherit; border-color:#D7D7D7;}
@@ -333,7 +324,19 @@ table a, #comments a{background-color:inherit;}
 @media screen and (min-width:180px) and (max-width:750px) {
 	.imgl, .imgr{display:inline-block; float:none; margin:0 0 10px 0;}
 	.fl_left, .fl_right{display:block; float:none;}
-	.one_half, .one_third, .two_third, .one_quarter, .two_quarter, .three_quarter{display:block; float:none; width:auto; margin:0 0 30px 0; padding:0;}
+	.one_half, .one_third, .two_third, .two_quarter, .three_quarter{
+		display:block;
+		float:none;
+		width:auto;
+		margin:0 0 1em 0;
+		padding:0;
+		text-align: center;
+	}
+	.one_quarter {
+		width:48.46625766871166%;
+		margin:0 0 1em 0;
+		padding-right: 1em;
+	}
 
 	.last{margin-bottom:0;}
 
@@ -344,12 +347,10 @@ table a, #comments a{background-color:inherit;}
 	#header #logo{text-align:center; margin-bottom:15px;}
 
 	#pageintro{padding:140px 0 50px;}
-	.container{padding-bottom:50px;}
 	#info{padding-bottom:50px;}
-	#footer{padding-bottom:20px;}
 }
 
-@media screen and (min-width:180px) and (max-width:900px) {
+@media screen and (min-width:180px) and (max-width:1000px) {
 	#topbar, #header, #pageintro, #breadcrumb, .container, #info, #footer, #copyright{max-width:90%;}
 
 	#topbar{}
@@ -379,8 +380,10 @@ table a, #comments a{background-color:inherit;}
 
 /* Max Wrapper Width - Laptop, Desktop etc.
 --------------------------------------------------------------------------------------------------------------- */
-@media screen and (min-width:978px) {
-	#topbar, #header, #pageintro, #breadcrumb, .container, #info, #footer, #copyright{max-width:978px;}
+@media screen and (min-width:1000px) {
+	#topbar, #header, #pageintro, #breadcrumb, .container, #info, #footer, #copyright{
+		max-width:900px;
+	}
 }
 
 
