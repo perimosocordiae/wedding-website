@@ -228,13 +228,9 @@ label span{color:#FF0000; background-color:inherit;}
 .overlay{color:inherit; background-color:rgba(0,0,0,.65);}
 
 #pageintro .maintitle {
-		color: #811B33;
-		font-family: "Clicker Script",cursive;
-		font-weight: bold;
-		font-size: 85px;
-	}
-#pageintro .xl {
-	color: #811B33;
+	color: white;
+	font-family: "Clicker Script",cursive;
+	font-size: 78px;
 }
 
 
